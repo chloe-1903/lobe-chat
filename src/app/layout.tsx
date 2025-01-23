@@ -55,7 +55,7 @@ export const generateViewport = async (): ResolvingViewport => {
 
   return {
     ...dynamicScale,
-    initialScale: 1,
+    initialScale: 2,
     minimumScale: 1,
     themeColor: [
       { color: '#f8f8f8', media: '(prefers-color-scheme: light)' },
