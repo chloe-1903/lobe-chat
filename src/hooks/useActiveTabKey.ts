@@ -7,9 +7,9 @@ import { ProfileTabs, SettingsTabs, SidebarTabKey } from '@/store/global/initial
  * Returns the active tab key (chat/market/settings/...)
  */
 export const useActiveTabKey = () => {
-  const pathname = usePathname();
+  const path = usePathname();
 
-  return pathname.split('/').find(Boolean)! as SidebarTabKey;
+  return path.split('/').find(Boolean)! as SidebarTabKey;
 };
 
 /**
